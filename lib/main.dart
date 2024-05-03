@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:messenger_app/counter_screen.dart';
-import 'package:messenger_app/login_screen.dart';
-import 'package:messenger_app/messenger_screen.dart';
-import 'package:messenger_app/users_screen.dart';
+import 'package:messenger_app/modules/counter/counter_screen.dart';
+import 'package:messenger_app/modules/login/login_screen.dart';
+import 'package:messenger_app/modules/messenger/messenger_screen.dart';
+import 'package:messenger_app/modules/users/users_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -36,7 +36,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: CounterScreen(),
+      home: LoginScreen(),
     );
   }
 }
