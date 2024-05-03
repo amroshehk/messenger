@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:messenger_app/login_screen.dart';
+import 'package:messenger_app/modules/counter/counter_screen.dart';
+import 'package:messenger_app/modules/login/login_screen.dart';
+import 'package:messenger_app/modules/messenger/messenger_screen.dart';
+import 'package:messenger_app/modules/users/users_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,6 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         // This is the theme of your application.
